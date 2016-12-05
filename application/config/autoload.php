@@ -60,7 +60,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array('pagination', 'xmlrpc' , 'form_validation', 'email','upload','paypal');
+$autoload['libraries'] = array('pagination', 'xmlrpc' , 'form_validation', 'email','upload','paypal', 'session');
 
 
 /*
@@ -88,7 +88,10 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url','file','form','security','string','inflector','directory','download','multi_language');
+$autoload['helper'] = array(
+    'url', 'file', 'form', 'security', 'string', 'inflector', 'directory', 'download', 'multi_language', 'html',
+    'globals'
+);
 
 
 /*
@@ -104,7 +107,7 @@ $autoload['helper'] = array('url','file','form','security','string','inflector',
 |
 */
 
-$autoload['config'] = array();
+$autoload['config'] = array('pencilcrunch');
 
 
 /*
