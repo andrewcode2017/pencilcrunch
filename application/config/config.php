@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://pencilcrunch.dev/';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
