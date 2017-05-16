@@ -8,6 +8,8 @@ RUN  bash -c "debconf-set-selections <<< 'mysql-server mysql-server/root_passwor
 RUN  apt-get update && apt-get -y install mysql-server mysql-client php5-mysql
 RUN  docker-php-ext-install mysqli pdo pdo_mysql
 RUN  cp /usr/share/php5/php.ini-production /usr/local/etc/php/php.ini
+RUN a2enmod rewrite
+RUN service apache2 restart
 
 COPY . /var/www/html/
 ADD  etc/build/run.sh /app/
